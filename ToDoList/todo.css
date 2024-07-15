@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    background-color: #ced8fd;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.app {
+    width: 60%;
+}
+@media(max-width: 768px){
+    .app {
+        width: 90%;
+    }
+}
+.app h1 {
+    color: #ffffff;
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+    border-radius: .5rem .5rem 0 0;
+    background-color: #f8a0a0;
+    font-family: 'Rajdhani', sans-serif;
+}
+.app form input {
+    border: none;
+    background-color: #0eb7ef;
+    font-size: large;
+    color: #ffffff;
+    padding: 10px;
+    width: 90%;
+}
+.app form button {
+    border: none;
+    width: 9%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 5px;
+    height: 40px;
+}
+.app ul {
+    list-style: none;
+    color: #e0e0e0;
+    padding: 0;
+}
+
+.app ul li {
+    padding: 10px;
+    background-color: #5a69a1;
+    border-bottom: 1px solid #5a69a1;
+}
+.check {
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid rgb(255, 255, 255);
+    -webkit-appreance: none;
+}
+.check:checked {
+    background-color: #1dd2af;
+}
+.task {
+    font-size: 18px;
+    padding: 0px 10px;
+}
+.task:focus {
+    outline: none;
+}
+.app ul li i{
+    float: right;
+    cursor: pointer;
+}
+
+.app ul li i:hover{
+    color: #1dd2af;
+}
+.complete {
+    color: rgba(192, 192, 192, 0.8);
+    text-decoration: line-through;
+}
